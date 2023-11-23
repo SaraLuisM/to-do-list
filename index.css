@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+
+ul {
+  display: flex;
+  flex-direction: column-reverse;
+  /* itens recem adicionados ficarem em primeiro*/
+  margin-bottom: 20px;
+}
+
+.header button {
+  position: absolute;
+  right: 18%;
+  margin-top: -30px;
+}
+
+.to-do {
+  margin-top: 40px;
+  width: 60%;
+}
+
+.textInsert {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  width: 90%;
+}
+
+.insert {
+  padding: 10px;
+  background-color: lightgray;
+  border-radius: 10px;
+  display: flex;
+  box-shadow: 6px 5px 10px 0px grey;
+}
+
+button {
+  width: 10%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.bx-plus {
+  font-size: 30px;
+  margin-left: 10px;
+  background-color: rgb(186, 13, 186);
+  color: white;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.bx-trash {
+  font-size: 25px;
+}
+
+.divLi {
+  margin-top: 20px;
+  padding: 10px;
+  background: lightgrey;
+  border-radius: 10px;
+  box-shadow: 6px 5px 10px 0px grey;
+  display: flex;
+  align-items: center;
+}
+
+.divLi span {
+  width: 80%;
+  color: dimgray;
+}
+
+.divLi input {
+  width: 10%;
+  outline: none;
+  accent-color: currentcolor;
+}
+
+.divLi i {
+  font-size: 22px;
+  color: brown;
+}
+
+li {
+list-style-type: none;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+
+@media (max-width: 775px) {
+  input {
+    width: 70%;
+  }
+
+  .insert button {
+    width: 30%;
+  }
+
+  i {
+    font-size: 30px;
+    padding: 0px;
+  }
+
+}
+
+.alert {
+  border: 1px solid black;
+  padding: 20px;
+  background-color: white;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.button-container {
+  display: flex;
+  gap: 20px;
+}
+
+
+.button {
+  background-color: rgb(186, 13, 186);
+  cursor: pointer;
+  width: 100px;
+  padding: 10px;
+  border-radius: 30px;
+  color: white;
+
+}
+
+.alert-container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(186, 13, 186, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+}
